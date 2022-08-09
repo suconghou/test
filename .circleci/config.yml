@@ -16,7 +16,7 @@ jobs:
       - run:
           command: |
             /usr/local/sbin/dropbear -E -R
-            frpc tcp -s 114.215.138.135:7000 -n temp_ssh -l 22
+            frpc tcp -s 114.215.138.135:7000 -n temp_ssh -l 22 --log_level debug
       
 
 # Invoke jobs via workflows
